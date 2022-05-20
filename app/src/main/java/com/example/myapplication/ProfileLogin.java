@@ -42,13 +42,13 @@ public class ProfileLogin extends Fragment  implements View.OnClickListener {
         View rootView = inflater.inflate(R.layout.profile_login, container, false);
 
 
-        Button logBtn = (Button) rootView.findViewById(R.id.login_button);
-        Button to_reg_Btn = (Button) rootView.findViewById(R.id.to_registration_button);
+        Button logBtn = (Button) rootView.findViewById(R.id.go);
+        Button to_reg_Btn = (Button) rootView.findViewById(R.id.createAccount);
 
 
-        Edreg_username = (EditText) rootView.findViewById(R.id.reg_username);
-        Edreg_password = (EditText) rootView.findViewById(R.id.reg_password);
-        Edreg_email = (EditText) rootView.findViewById(R.id.reg_email);
+        Edreg_username = (EditText) rootView.findViewById(R.id.nickname);
+        Edreg_password = (EditText) rootView.findViewById(R.id.password);
+        Edreg_email = (EditText) rootView.findViewById(R.id.email);
 
 
 
@@ -65,10 +65,10 @@ public class ProfileLogin extends Fragment  implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.login_button:
+            case R.id.go:
                 LogButtonClick();
                 break;
-            case R.id.to_registration_button:
+            case R.id.createAccount:
                 RegButtonClick();
                 break;
         }
@@ -125,7 +125,7 @@ public class ProfileLogin extends Fragment  implements View.OnClickListener {
 
 
 
-        String add1      =  Edreg_username.getText().toString();
+        String add1      =  Edreg_email.getText().toString();
         String add2      =  Edreg_password.getText().toString();
 
         Login login = new Login(add1, add2);
@@ -153,9 +153,9 @@ public class ProfileLogin extends Fragment  implements View.OnClickListener {
 
                         Toast.makeText(getContext(), token, Toast.LENGTH_SHORT).show();
 
-//                        Fragment fragment = null;
-//                        fragment = new Home();
-//                        replaceFragment(fragment);
+                        Fragment fragment = null;
+                        fragment = new MainMenu();
+                        replaceFragment(fragment);
 
                     }
 
@@ -175,9 +175,7 @@ public class ProfileLogin extends Fragment  implements View.OnClickListener {
 
     private Boolean IsEmptyEditTextLogin(){
 
-
-
-        if(Edreg_password.getText().toString().isEmpty() || Edreg_username.getText().toString().isEmpty()){
+        if(Edreg_password.getText().toString().isEmpty() || Edreg_email.getText().toString().isEmpty()){
 
             Toast toast = Toast.makeText(getActivity(),"Empty EditText", Toast.LENGTH_LONG);
             toast.setGravity(Gravity.CENTER, 0, 0);
@@ -185,7 +183,8 @@ public class ProfileLogin extends Fragment  implements View.OnClickListener {
 
 
             return true;
-        }else{
+        }
+        else{
             return false;
         }
 
