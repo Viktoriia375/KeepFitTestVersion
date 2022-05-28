@@ -19,7 +19,8 @@
             app:fabAlignmentMode="center"
             app:fabCradleMargin="10sp"
             app:fabCradleRoundedCornerRadius="15sp"
-            app:fabCradleVerticalOffset="0sp" />
+            app:fabCradleVerticalOffset="0sp"
+            />
 
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/top_app_bar"
@@ -36,6 +37,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/map_icon"
             app:layout_anchor="@id/bottom_app_bar"
+            app:backgroundTint="@color/green_background"
             app:maxImageSize="29dp" />
 
         <ImageView
@@ -81,6 +83,7 @@
         app:maxImageSize="35dp"
         android:elevation="0sp"
         app:elevation="0sp"
+        app:backgroundTint="@color/green_background"
         />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -93,32 +96,34 @@
         android:elevation="0sp"
         android:src="@drawable/trophy_cup_icon"
         app:elevation="0sp"
-        app:maxImageSize="33sp" />
+        app:maxImageSize="33sp"
+        app:backgroundTint="@color/green_background"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/statistic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginEnd="90sp"
-        android:src="@drawable/statistic_icon"
-        app:maxImageSize="33sp"
         android:elevation="0sp"
-        app:elevation="0sp" />
+        android:src="@drawable/statistic_icon"
+        app:elevation="0sp"
+        app:maxImageSize="33sp"
+        app:backgroundTint="@color/green_background"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginEnd="20sp"
-        android:src="@drawable/profile_icon"
-        app:maxImageSize="37sp"
         android:elevation="0sp"
+        android:src="@drawable/profile_icon"
         app:elevation="0sp"
-        />
+        app:maxImageSize="37sp"
+        app:backgroundTint="@color/green_background"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/menu"
@@ -131,6 +136,7 @@
         app:maxImageSize="32dp"
         android:elevation="0sp"
         app:elevation="0sp"
+        app:backgroundTint="@color/green_background"
         />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -144,6 +150,7 @@
         app:maxImageSize="32dp"
         android:elevation="0sp"
         app:elevation="0sp"
+        app:backgroundTint="@color/green_background"
         />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

@@ -39,7 +39,7 @@ public class ProfileRegister extends Fragment  implements View.OnClickListener {
         View rootView = inflater.inflate(R.layout.profile_register, container, false);
 
         Button regBtn = (Button) rootView.findViewById(R.id.button);
-        Button logBtn = (Button) rootView.findViewById(R.id.button3);
+        Button logBtn = (Button) rootView.findViewById(R.id.button_back_to_login);
 
         Edreg_username = (EditText) rootView.findViewById(R.id.nickname);
         Edreg_password = (EditText) rootView.findViewById(R.id.password);
@@ -61,7 +61,7 @@ public class ProfileRegister extends Fragment  implements View.OnClickListener {
             case R.id.button:
                 RegButtonClick();
                 break;
-            case R.id.button3:
+            case R.id.button_back_to_login:
                 LogButtonClick();
                 break;
         }
