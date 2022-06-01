@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -14,12 +15,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
+            android:layout_marginStart="-160sp"
             app:backgroundTint="@color/green_background"
             app:elevation="0sp"
-            app:fabAlignmentMode="center"
             app:fabCradleMargin="10sp"
             app:fabCradleRoundedCornerRadius="15sp"
             app:fabCradleVerticalOffset="0sp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/route_icon"
+            app:backgroundTint="@color/green_background"
+            app:layout_anchor="@id/bottom_app_bar"
+            app:maxImageSize="35sp">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
 
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/top_app_bar"
@@ -30,15 +42,6 @@
             app:elevation="0sp"
             app:fabAlignmentMode="center" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/map"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/map_icon"
-            app:backgroundTint="@color/green_background"
-            app:layout_anchor="@id/bottom_app_bar"
-            app:maxImageSize="29dp" />
-
         <ImageView
             android:id="@+id/avatar"
             android:layout_width="75sp"
@@ -48,28 +51,24 @@
             app:layout_anchorGravity="center"
             app:srcCompat="@drawable/avatar_icon" />
 
-        <ImageView
-            android:id="@+id/search_field_back"
-            android:layout_width="match_parent"
-            android:layout_height="30sp"
-            android:layout_marginHorizontal="30sp"
-            android:layout_marginTop="70sp"
-            app:srcCompat="@drawable/search_field" />
-
-        <EditText
-            android:id="@+id/search_field"
+        <TextView
+            android:id="@+id/routes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="70sp"
-            android:layout_marginTop="62sp"
-            android:layout_marginEnd="40sp"
-            android:backgroundTint="#00000000"
-            android:ems="10"
-            android:inputType="text|textAutoComplete" />
+            android:layout_marginHorizontal="157sp"
+            android:layout_marginTop="77sp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/routes"
+            android:textAllCaps="false"
+            android:textColor="@color/green_textColor"
+            android:textSize="31sp" />
 
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="135sp" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/settings"
@@ -84,19 +83,6 @@
         app:elevation="0sp"
         app:backgroundTint="@color/green_background"
         />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/route_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="90sp"
-        android:elevation="0sp"
-        android:src="@drawable/route_icon"
-        app:backgroundTint="@color/green_background"
-        app:elevation="0sp"
-        app:maxImageSize="37sp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/statistic"
@@ -153,25 +139,18 @@
         />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="40sp"
-        android:layout_height="40sp"
-        app:backgroundTint="#00000000"
-        android:layout_marginTop="58sp"
-        android:layout_marginStart="23sp"
-        app:elevation="0sp"
-        android:elevation="0sp"
-        android:src="@drawable/search_icon"/>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/map_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="330sp"
-        android:layout_marginTop="595sp"
-        android:backgroundTint="@color/green_background"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="180sp"
         android:elevation="0sp"
+        android:src="@drawable/map_icon"
+        app:backgroundTint="@color/green_background"
         app:elevation="0sp"
-        android:src="@drawable/navigation_icon"
-        app:maxImageSize="28sp"
-        ></com.google.android.material.floatingactionbutton.FloatingActionButton>
+        app:maxImageSize="37sp" />
+
+
 
 </RelativeLayout>
