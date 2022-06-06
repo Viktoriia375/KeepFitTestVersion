@@ -165,13 +165,15 @@
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="330sp"
-        android:layout_marginTop="595sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="22sp"
+        android:layout_marginBottom="78sp"
         android:backgroundTint="@color/green_background"
         android:elevation="0sp"
-        app:elevation="0sp"
         android:src="@drawable/navigation_icon"
-        app:maxImageSize="28sp"
-        ></com.google.android.material.floatingactionbutton.FloatingActionButton>
+        app:borderWidth="0sp"
+        app:elevation="3sp"
+        app:maxImageSize="28sp"></com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 </RelativeLayout>

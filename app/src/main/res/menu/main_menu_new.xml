@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/route"
+            android:title="Routes"
+            android:icon="@drawable/route_icon" />
+
+        <item android:id="@+id/achievements"
+            android:title="Achievements"
+            android:icon="@drawable/trophy_cup_icon"/>
+
+        <item android:id="@+id/famous_places"
+            android:title="Famous Places"
+            android:icon="@drawable/star_icon"/>
+
+        <item android:id="@+id/progress"
+            android:title="Progress"
+            android:icon="@drawable/progress_icon"/>
+
+
+
+    </group>
+
+</menu>

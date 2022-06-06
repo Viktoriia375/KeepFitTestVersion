@@ -11,4 +11,8 @@
     <string name="createAccount"><u>create account</u></string>
     <string name="button_back">Back</string>
     <string name="routes">Routes</string>
+    <string-array name="routes">
+        <item>Name1</item>
+        <item>Name2</item>
+    </string-array>
 </resources>

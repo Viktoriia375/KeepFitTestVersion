@@ -17,21 +17,7 @@
             android:layout_gravity="bottom"
             android:layout_marginStart="-160sp"
             app:backgroundTint="@color/green_background"
-            app:elevation="0sp"
-            app:fabCradleMargin="10sp"
-            app:fabCradleRoundedCornerRadius="15sp"
-            app:fabCradleVerticalOffset="0sp" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/route_icon"
-            app:backgroundTint="@color/green_background"
-            app:layout_anchor="@id/bottom_app_bar"
-            app:maxImageSize="35sp">
-
-        </com.google.android.material.floatingactionbutton.FloatingActionButton>
-
+            app:elevation="0sp" />
 
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/top_app_bar"
@@ -39,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="top"
             app:backgroundTint="@color/green_background"
-            app:elevation="0sp"
+            app:elevation="0.1sp"
             app:fabAlignmentMode="center" />
 
         <ImageView
@@ -51,22 +37,6 @@
             app:layout_anchorGravity="center"
             app:srcCompat="@drawable/avatar_icon" />
 
-        <TextView
-            android:id="@+id/routes"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="157sp"
-            android:layout_marginTop="77sp"
-            android:fontFamily="@font/roboto_regular"
-            android:text="@string/routes"
-            android:textAllCaps="false"
-            android:textColor="@color/green_textColor"
-            android:textSize="31sp" />
-
-        <ListView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="135sp" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
@@ -151,6 +121,37 @@
         app:elevation="0sp"
         app:maxImageSize="37sp" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green_background"
+        app:elevation="0sp"
+        android:elevation="0sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="97sp"
+        android:src="@drawable/route_icon"
+        app:maxImageSize="38sp"
+        app:borderWidth="0sp">
 
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginTop="57sp"
+        android:layout_marginBottom="57sp"
+        android:background="@color/green_background"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/header_menu"
+        app:itemHorizontalPadding="20sp"
+        app:itemIconPadding="13sp"
+        app:itemIconSize="26sp"
+        app:itemShapeFillColor="@color/under_menu_item"
+        app:itemShapeInsetEnd="13sp"
+        app:itemShapeInsetStart="13sp"
+        app:menu="@menu/main_menu_new">
+
+    </com.google.android.material.navigation.NavigationView>
 </RelativeLayout>
